@@ -1,0 +1,16 @@
+{
+  "name": "project-eakalaiva",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "web",
+    "mobile",
+    "discord-bot"
+  ],
+  "scripts": {
+    "web:dev": "npm run dev --workspace=web",
+    "web:build": "npm run build --workspace=web",
+    "mobile:start": "npm run start --workspace=mobile",
+    "bot:dev": "npm run dev --workspace=discord-bot"
+  }
+}
