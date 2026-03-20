@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Project Eakalaiva",
-  description: "Skill-tracking and opportunity platform for Tamil Nadu engineering students",
+  title: 'Project Eakalaiva',
+  description: 'Skill-tracking and opportunity platform for Tamil Nadu engineering students',
 };
 
 export default function RootLayout({
@@ -16,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="font-manrope bg-background text-on-surface antialiased">
+        {children}
+      </body>
     </html>
   );
 }

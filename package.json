@@ -12,5 +12,8 @@
     "web:build": "npm run build --workspace=web",
     "mobile:start": "npm run start --workspace=mobile",
     "bot:dev": "npm run dev --workspace=discord-bot"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.27"
   }
 }
